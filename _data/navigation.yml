@@ -1,0 +1,11 @@
+main:
+  - title: "文章 Blog"
+    url: /
+  - title: "项目 Projects"
+    url: /projects/
+  - title: "分类 Categories"
+    url: /categories/
+  - title: "标签 Tags"
+    url: /tags/
+  - title: "关于 About"
+    url: /about/

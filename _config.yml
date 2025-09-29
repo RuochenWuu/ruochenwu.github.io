@@ -1,0 +1,88 @@
+title: Your Name
+name: Your Name
+description: DBA · Cloud · AWS · PostgreSQL
+url: https://<your-github-username>.github.io
+baseurl: ""
+# Minimal Mistakes skin: "default", "dark", "dirt", "air", etc.
+minimal_mistakes_skin: "dark"
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-include-cache
+
+# Site settings
+timezone: America/Vancouver
+locale: zh-CN
+paginate: 5
+paginate_path: "/page:num/"
+excerpt_separator: "<!--more-->"
+
+author:
+  name: "Your Name"
+  avatar: "/assets/images/avatar.jpg"
+  bio: "DBA & Cloud Engineer · PostgreSQL · AWS · Kubernetes"
+  location: "Vancouver, Canada"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/<your-github-username>"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/<your-linkedin-handle>/"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope"
+      url: "mailto:yourname@example.com"
+
+# Comments (optional: Giscus — fill the IDs from giscus.app)
+comments:
+  provider: "giscus"
+  giscus:
+    repo: "<your-github-username>/<your-github-username>.github.io"
+    repo_id: ""
+    category: "General"
+    category_id: ""
+    mapping: "pathname"
+    reactions_enabled: "1"
+    input_position: "bottom"
+    theme: "preferred_color_scheme"
+
+# Enable search & sharing
+search: true
+share: true
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      toc: true
+      toc_sticky: true
+      comments: true
+      share: true
+      related: true
+      classes: wide
+      mermaid: true
+  - scope:
+      path: ""
+    values:
+      sidebar:
+        nav: "main"
+
+collections:
+  posts:
+    output: true
+
+# Navigation (edit _data/navigation.yml to change menus)
+nav: 
+  main: main
+
+# SEO
+permalink: /:categories/:title/
