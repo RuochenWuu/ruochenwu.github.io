@@ -2,12 +2,12 @@
 
 快速启动说明：
 
-1. 新建仓库：命名为 `<your-github-username>.github.io`。
+1. 新建仓库：命名为 `ruochenwuu.github.io`。
 2. 把本模板所有文件推送到 `main` 分支根目录。
 3. 仓库 Settings → Pages：
    - Build and deployment → Source: **Deploy from a branch**
    - Branch: **main** / **/** (root)
-4. 访问 `https://<your-github-username>.github.io`。
+4. 访问 `https://ruochenwuu.github.io`。
 
 ## 定制
 - 编辑 `_config.yml`：填写你的名字、社交链接、评论（可选 Giscus）。
