@@ -18,5 +18,5 @@ PostgreSQL · AWS · Kubernetes · Terraform · Kafka · Redis · Prometheus/Gra
 - 2023 — *PostgreSQL Vacuum 深入理解*
 
 ### 联系方式
-- GitHub: https://github.com/<your-github-username>  
-- Email: yourname@example.com
+- GitHub: https://github.com/RuochenWuu 
+- Email: wurc13693508355@gmail.com
