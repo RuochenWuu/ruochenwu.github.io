@@ -1,7 +1,7 @@
-title: Your Name
-name: Your Name
+title: ruochenwuu
+name: ruochenwuu
 description: DBA · Cloud · AWS · PostgreSQL
-url: https://<your-github-username>.github.io
+url: https://ruochenwuu.github.io
 baseurl: ""
 # Minimal Mistakes skin: "default", "dark", "dirt", "air", etc.
 minimal_mistakes_skin: "dark"
@@ -29,10 +29,10 @@ author:
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/<your-github-username>"
+      url: "https://github.com/RuochenWuu"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/<your-linkedin-handle>/"
+      url: "https://www.linkedin.com/in/ruochenwu0224/"
     - label: "Email"
       icon: "fas fa-fw fa-envelope"
       url: "mailto:yourname@example.com"
@@ -41,7 +41,7 @@ author:
 comments:
   provider: "giscus"
   giscus:
-    repo: "<your-github-username>/<your-github-username>.github.io"
+    repo: "RuochenWuu/ruochenwuu.github.io"
     repo_id: ""
     category: "General"
     category_id: ""
