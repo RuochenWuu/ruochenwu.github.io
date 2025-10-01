@@ -77,6 +77,7 @@
     } else {
       nav.appendChild(button);
     }
+
     return button;
   }
 
