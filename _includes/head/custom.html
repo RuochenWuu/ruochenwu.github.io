@@ -1,0 +1,13 @@
+<script>
+  (function () {
+    try {
+      var savedTheme = localStorage.getItem('color-theme');
+      var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      var initialTheme = savedTheme || (prefersDark ? 'dark' : 'light');
+      document.documentElement.dataset.theme = initialTheme;
+    } catch (error) {
+      document.documentElement.dataset.theme = 'light';
+    }
+  })();
+</script>
+<script defer src="{{ '/assets/js/theme-toggle.js' | relative_url }}"></script>

@@ -1,14 +1,14 @@
 - name: pg-chaos-lab
-  link: https://github.com/<your-github-username>/pg-chaos-lab
+  link: https://github.com/RuochenWuu/pg-chaos-lab
   desc: 基于 Kubernetes 的 PostgreSQL 故障注入与恢复演练工具，覆盖网络分区、磁盘抖动、主备切换等场景。
   stack: Kubernetes, PostgreSQL, Litmus, Python
 
 - name: cost-guardian
-  link: https://github.com/<your-github-username>/cost-guardian
+  link: https://github.com/RuochenWuu/cost-guardian
   desc: 云成本卫士：基于事件的预算告警与自动降配/关停策略。
   stack: AWS, Lambda, EventBridge, DynamoDB, Terraform, Go
 
 - name: pgtune-pro
-  link: https://github.com/<your-github-username>/pgtune-pro
+  link: https://github.com/RuochenWuu/pgtune-pro
   desc: 面向生产的 PostgreSQL 自动化参数调优工具，内置工作负载画像与压测。
   stack: Go, Bash, Prometheus, Grafana
