@@ -3,8 +3,8 @@ layout: splash
 permalink: /
 title: Hi, I'm Your Name
 header:
-  overlay_color: "#000"
-  overlay_filter: 0.5
+  overlay_color: "#fff"
+  overlay_filter: 0.25
   overlay_image: /assets/images/cover.jpg
 excerpt: >
   DBA & Cloud Engineer. PostgreSQL internals, high availability, and cloud cost optimization.
