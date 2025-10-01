@@ -1,7 +1,8 @@
 (function () {
   var THEME_STORAGE_KEY = 'color-theme';
-  var LIGHT_LABEL = 'Lightroom';
-  var DARK_LABEL = 'Darkroom';
+  var LIGHT_LABEL = 'Light';
+  var DARK_LABEL = 'Dark';
+
 
   function applyTheme(theme) {
     document.documentElement.dataset.theme = theme;
@@ -17,41 +18,18 @@
     return current === 'dark' ? 'dark' : 'light';
   }
 
-  function getButtonLabel(theme) {
-    return theme === 'dark' ? LIGHT_LABEL : DARK_LABEL;
-  }
-
-  function createIcon(theme) {
-    var xmlns = 'http://www.w3.org/2000/svg';
-    var icon = document.createElementNS(xmlns, 'svg');
-    icon.setAttribute('viewBox', '0 0 24 24');
-    icon.setAttribute('aria-hidden', 'true');
-
-    var path = document.createElementNS(xmlns, 'path');
-    if (theme === 'dark') {
-      path.setAttribute('d', 'M12 4.354a7.646 7.646 0 1 0 7.646 7.646A7.646 7.646 0 0 0 12 4.354zm0-2.354a10 10 0 1 1-10 10 10 10 0 0 1 10-10z');
-    } else {
-      path.setAttribute('d', 'M21 12.79A9 9 0 0 1 11.21 3 7 7 0 1 0 21 12.79z');
-    }
-    path.setAttribute('fill', 'currentColor');
-    icon.appendChild(path);
-    return icon;
-  }
-
   function updateButton(button) {
     var theme = getCurrentTheme();
     var targetTheme = theme === 'dark' ? 'light' : 'dark';
+
     button.setAttribute('data-theme-target', targetTheme);
+    button.setAttribute('aria-pressed', theme === 'dark' ? 'true' : 'false');
+    button.classList.toggle('is-dark', theme === 'dark');
 
-    var label = button.querySelector('.theme-toggle__label');
-    if (label) {
-      label.textContent = getButtonLabel(theme);
-    }
+    var sr = button.querySelector('.theme-toggle__sr');
+    if (sr) {
+      sr.textContent = theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode';
 
-    var iconContainer = button.querySelector('.theme-toggle__icon');
-    if (iconContainer) {
-      iconContainer.innerHTML = '';
-      iconContainer.appendChild(createIcon(targetTheme));
     }
   }
 
@@ -65,14 +43,33 @@
     button.type = 'button';
     button.className = 'theme-toggle';
     button.setAttribute('aria-live', 'polite');
+    button.setAttribute('aria-pressed', 'false');
+    button.setAttribute('aria-label', 'Toggle color mode');
 
-    var icon = document.createElement('span');
-    icon.className = 'theme-toggle__icon';
-    button.appendChild(icon);
+    var sr = document.createElement('span');
+    sr.className = 'theme-toggle__sr';
+    sr.textContent = 'Switch to dark mode';
+    button.appendChild(sr);
 
-    var label = document.createElement('span');
-    label.className = 'theme-toggle__label';
-    button.appendChild(label);
+    var track = document.createElement('span');
+    track.className = 'theme-toggle__track';
+
+    var lightLabel = document.createElement('span');
+    lightLabel.className = 'theme-toggle__label theme-toggle__label--light';
+    lightLabel.textContent = LIGHT_LABEL;
+    track.appendChild(lightLabel);
+
+    var darkLabel = document.createElement('span');
+    darkLabel.className = 'theme-toggle__label theme-toggle__label--dark';
+    darkLabel.textContent = DARK_LABEL;
+    track.appendChild(darkLabel);
+
+    button.appendChild(track);
+
+    var thumb = document.createElement('span');
+    thumb.className = 'theme-toggle__thumb';
+    thumb.setAttribute('aria-hidden', 'true');
+    button.appendChild(thumb);
 
     var toggle = nav.querySelector('.greedy-nav__toggle');
     if (toggle && toggle.parentNode === nav) {
