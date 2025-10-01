@@ -22,7 +22,7 @@ paginate_path: "/page:num/"
 excerpt_separator: "<!--more-->"
 
 author:
-  name: "Your Name"
+  name: "Ruochen"
   avatar: "/assets/images/avatar.jpg"
   bio: "DBA & Cloud Engineer · PostgreSQL · AWS · Kubernetes"
   location: "Vancouver, Canada"
@@ -35,7 +35,7 @@ author:
       url: "https://www.linkedin.com/in/ruochenwu0224/"
     - label: "Email"
       icon: "fas fa-fw fa-envelope"
-      url: "mailto:yourname@example.com"
+      url: "mailto:rwu12@nyit.edu"
 
 # Comments (optional: Giscus — fill the IDs from giscus.app)
 comments:

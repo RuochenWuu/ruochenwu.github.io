@@ -3,6 +3,8 @@
   var LIGHT_LABEL = 'Light';
   var DARK_LABEL = 'Dark';
 
+
+
   function applyTheme(theme) {
     document.documentElement.dataset.theme = theme;
     try {
@@ -28,6 +30,8 @@
     var sr = button.querySelector('.theme-toggle__sr');
     if (sr) {
       sr.textContent = theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode';
+
+
     }
   }
 

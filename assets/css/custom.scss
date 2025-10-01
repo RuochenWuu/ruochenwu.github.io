@@ -4,6 +4,7 @@
   color-scheme: light;
   --site-bg: #ffffff;
   --site-text: #1f2933;
+
   --hero-overlay: rgba(248, 250, 252, 0.92);
   --card-bg: #ffffff;
   --card-border: rgba(15, 23, 42, 0.08);
@@ -16,6 +17,7 @@
   --secondary-button-text: var(--accent-secondary);
   --secondary-button-border: rgba(249, 115, 22, 0.55);
   --toggle-track-active: rgba(37, 99, 235, 0.45);
+
   --toggle-track-off: rgba(15, 23, 42, 0.12);
   --toggle-border: rgba(15, 23, 42, 0.18);
   --toggle-thumb: #ffffff;
@@ -23,6 +25,7 @@
   --toggle-label-active: #0f172a;
   --toggle-label-inactive: rgba(15, 23, 42, 0.45);
   --toggle-focus-ring: rgba(37, 99, 235, 0.45);
+
 }
 
 [data-theme='dark'] {
@@ -245,3 +248,4 @@ body {
     height: 1.65rem;
   }
 }
+
