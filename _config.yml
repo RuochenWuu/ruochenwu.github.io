@@ -4,7 +4,7 @@ description: DBA · Cloud · AWS · PostgreSQL
 url: https://ruochenwuu.github.io
 baseurl: ""
 # Minimal Mistakes skin: "default", "dark", "dirt", "air", etc.
-minimal_mistakes_skin: "dark"
+minimal_mistakes_skin: "default"
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 
 plugins:
